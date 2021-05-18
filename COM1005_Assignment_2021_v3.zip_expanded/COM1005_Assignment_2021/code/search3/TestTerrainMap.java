@@ -27,8 +27,10 @@ public class TestTerrainMap {
 
   public static void main(String[] arg) {
 
-    TerrainMap tm = new TerrainMap("tmc.pgm");
-
+    TerrainMap tm = new TerrainMap("./COM1005_Assignment_2021/code/search3/tmc.pgm");
+    System.out.println(new File(".").getAbsoluteFile());
+    System.out.println(tm.getDepth());
+    System.out.println(tm.getHeight());
     System.out.println(tm.getWidth());
     System.out.println(tm.getTmap()[7][2]);
 
